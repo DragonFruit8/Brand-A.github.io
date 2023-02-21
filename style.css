@@ -46,6 +46,9 @@ i.material-icons{
     font-size: 3rem;
     color: #d9d200;
 }
+#brand-logo{
+  cursor: default;
+}
 #hero{
   min-height: 80vh;
   display: flex;
