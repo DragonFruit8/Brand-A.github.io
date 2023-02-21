@@ -302,23 +302,42 @@
       <div class="row-6 text-center"><button type="button" class="btn btn-primary">View All Products</button></div>
     </div>
   </section>
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            ...
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+ <!-- Modal -->
+ <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">THANK YOU</h1>
+        <button type="button" id="close" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="qrreset()"></button>
+      </div>
+      <div class="modal-body d-flex gap-3">
+        <div class="container">
+          <div class="col">
+            <div class="row">
+              <picture id="icon-holder" class="w-100 h-100">
+                 <img id="qr"src="./img/PayPalQR.png" media="(min-width: 300px)"
+                  class="img-fluid w-100 hide">
+              </picture>
+            </div>
+            <div class="row d-grid gap-3">
+              <button id="paypalbutton" type="button" class="btn btn-primary"><img id="icon-small" class="img-fluid"
+                  src="./img/PayPal.png" onclick="paypalqr()"> PayPal</button>
+              <button id="cashappbutton" type="button" class="btn btn-light border border-success"><img id="icon-small" class="img-fluid"
+                  src="./img/cashapp.png" onclick="cashappqr()">CashApp</button>
+              <button id="googlebutton" type="button" class="btn btn-dark justify-content-center" onclick="googleqr()"><img id="icon-small"
+                  class="img-fluid" src="./img/Google-Symbol.png"> Pay</button>
+              <button id="venmobutton" type="button" class="btn btn-primary"><img id="icon-small" class="img-fluid"
+                  src="./img/Venmo-Logo.png" onclick="venmoqr()"> Venmo</button>
+            </div>
           </div>
         </div>
       </div>
+      <div class="modal-footer">
+        <button type="button" id="close" class="btn btn-secondary" data-bs-dismiss="modal" onclick="qrreset()">Close</button>
+      </div>
     </div>
+  </div>
+</div>
 
   <footer class="px-5 py-2 bg-dark text-white text-center position-relative">
 

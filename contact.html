@@ -203,7 +203,7 @@
           <h1 class="modal-title fs-5" id="exampleModalLabel">THANK YOU</h1>
           <button type="button" id="close" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="qrreset()"></button>
         </div>
-        <div class="modal-body">
+        <div class="modal-body d-flex gap-3">
           <div class="container">
             <div class="col">
               <div class="row">
@@ -212,10 +212,10 @@
                     class="img-fluid w-100 hide">
                 </picture>
               </div>
-              <div class="row">
+              <div class="row d-grid gap-3">
                 <button id="paypalbutton" type="button" class="btn btn-primary"><img id="icon-small" class="img-fluid"
                     src="./img/PayPal.png" onclick="paypalqr()"> PayPal</button>
-                <button id="cashappbutton" type="button" class="btn btn-light"><img id="icon-small" class="img-fluid"
+                <button id="cashappbutton" type="button" class="btn btn-light border border-success"><img id="icon-small" class="img-fluid"
                     src="./img/cashapp.png" onclick="cashappqr()">CashApp</button>
                 <button id="googlebutton" type="button" class="btn btn-dark justify-content-center" onclick="googleqr()"><img id="icon-small"
                     class="img-fluid" src="./img/Google-Symbol.png"> Pay</button>
